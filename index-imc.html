@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>CodePen - Calculadora / IMC</title>
+  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"> 
+    <title>Imersão Dev - Aula 02</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-imc.css">
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow mb-5">
+		<div class="container-fluid">
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">
+			<img src="img/iconopets2.jpg" class="rounded"alt="60" width="60">
+		  </a>
+		  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<a class="navbar-brand" href="#" style="font-size: 30px;">Pet Society</a>
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="index.html" style="font-size: 18px;">Inicio</a>
+			  </li>
+			  <li class="nav-item" >
+				<a class="nav-link" href="somos4.html" style="font-size: 18px;">Quienes Somos</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="index1.html" style="font-size: 18px;">Galeria De Fotos</a>
+			  </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexpruebahtmlcontacto.html" style="font-size: 18px;">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index-imc.html" style="font-size: 18px;">Calculadora/IMC</a>
+        </li>
+			</ul>
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+			  <li class="nav-item">
+				<a class="nav-link" aria-current="page" href="registerpets.html" style="font-size: 18px;">Registrarse</a>
+				<a href="#">¿Olvidaste tu contraseña?</a>
+			  </li>
+			  <div class="row" style="margin-left: 18px;">
+				<div class="col">
+				  <div class="col-lg-12">
+					<label for="exampleFormControlInput1" class="col col-form-label">Correo Electronico</label>
+					<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.cl..">
+				  </div>
+				  </div>
+				</div>
+				<div class="row" style="margin-left: 15px;">
+				  <div class="col">
+					<div class="col-lg-12">
+					  <label for="inputPassword" class="col col-form-label">Contraseña</label>
+					  <div class="col">
+						<input type="text1" class="form-control" id="inputPassword" placeholder="Ingrese contraseña..">
+					  </div>
+				  </div>
+				</div>
+			  </div>
+			  <div class="col">
+				<div class="row">
+				  <div class="col-lg-12">
+					<button type="submit" class="btn btn-dark" style="margin:auto; margin-top:35px; margin-left: 45px;">Entrar</button>
+				  </div>
+				</div>
+			  </div>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+    <div class="container">
+        <div class="box1">
+            <h1 class="titulo">Calculadora / IMC</h1>
+            <input class="num1" id="num1" type="text" placeholder="Valor/Altura">
+            <br>
+            <input class="num2" id="num2" type="text" placeholder="Valor/Peso">
+            <br>
+            <input class="soma" type="submit" value="+" onclick=soma()>
+            <input class="subtracao" type="submit" value="-" onclick=subtracao()>
+            <input class="multiplicacao" type="submit" value="x" onclick=multiplicacao()>
+            <input class="divisao" type="submit" value="÷" onclick=divisao()>
+            <br>
+            <input class="buttonIMC" id="buttonIMC" type="submit" value="IMC" onclick=imc()>
+            <br>
+            <input class="resultado" id="resultado" type="text" placeholder="Resultado">
+            
+            <a href="https://alura.com.br/" target="_blank">
+            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo"></a>
+        </div>
+    </div>
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img src="img/iconopets2.jpg" width="50" alt="50"class="rounded-circle">
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>
+            SOBRE NOSOTROS:
+          </h2>
+          <p>Integrantes:</p>
+          <p>Diego Ulloa y Jarot Rivera</p>
+        </div>
+        <div class="box">
+          <h2>SIGUENOS</h2>
+          <div class="red-social">
+            <a href="#">
+              <img src="img/png-instragram.png"width="50" alt="50"class="rounded-circle">
+            </a>
+            <a href="#">
+              <img src="img/png-face.png"width="50" alt="50"class="rounded-circle">
+            </a>
+            <a href="#">
+              <img src="img/png-email.png"width="50" alt="50" class="rounded-circle">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small>
+          &copy; 2022 <b>PetSociety</b> - Todos los Derechos Reservados. Compras en este sitio son 100% Seguras.</small>
+        </small>
+      </div>
+    </footer>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
